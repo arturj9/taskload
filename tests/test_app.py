@@ -1,11 +1,4 @@
-from fastapi.testclient import TestClient
-
-from taskload.app import app
-
-
-def test_root_deve_retornar_200_e_ola_mundo():
-
-    client = TestClient(app)
+def test_root_deve_retornar_200_e_ola_mundo(client):
 
     response = client.get('/')
 
