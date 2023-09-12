@@ -22,6 +22,9 @@ jobs:
 
       - name: Instalar dependências do projeto
         run: poetry install
+      
+      - name: Formatar projeto
+        run: poetry run task format
 
       - name: Rodar os testes
         run: poetry run task test --cov-report=xml
@@ -35,7 +38,7 @@ jobs:
       name: Deploy app
 
       runs-on: ubuntu-latest
-      
+
       steps:
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
