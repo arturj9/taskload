@@ -1,4 +1,4 @@
-name: TaslLoad Rotinas
+name: TaskLoad Rotinas
 on:
   push:
     branches:
