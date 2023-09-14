@@ -25,14 +25,21 @@ jobs:
       
       - name: Formatar projeto
         run: poetry run task format
+      
+      - name: Criar db
+        run: touch database.db
 
       - name: Rodar os testes
         run: poetry run task test --cov-report=xml
+      
+      - name: Deletar db
+        run: rm database.db
 
       - name: Subir cobertura para o codecov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+
 
   deploy:
       name: Deploy app
