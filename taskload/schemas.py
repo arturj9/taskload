@@ -18,3 +18,13 @@ class TaskPublic(BaseModel):
 
 class TaskList(BaseModel):
     tasks: list[TaskPublic]
+
+
+class TaskUpdate(BaseModel):
+    title: str | None = None
+    description: str | None = None
+    state: TaskState | None = None
+
+
+class Message(BaseModel):
+    detail: str

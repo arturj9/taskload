@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 from taskload.routes import tasks
 
-app = FastAPI()
+app = FastAPI(title='TaskLoad')
 
 app.include_router(tasks.router)
 
