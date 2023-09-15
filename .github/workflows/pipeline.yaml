@@ -25,6 +25,12 @@ jobs:
       
       - name: Formatar projeto
         run: poetry run task format
+
+      - name: Criar .env
+        run: touch .env
+        
+      - name: Definir .env
+        run: echo 'DATABASE_URL="sqlite:///database.db"' >> .env
       
       - name: Criar db
         run: touch database.db
@@ -34,6 +40,9 @@ jobs:
       
       - name: Deletar db
         run: rm database.db
+
+      - name: Deletar .env
+        run: rm .env
 
       - name: Subir cobertura para o codecov
         uses: codecov/codecov-action@v3
