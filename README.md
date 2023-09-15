@@ -14,7 +14,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ### 📋 Pré-requisitos
 
-* Python na versão >=3.11
+* Python na versão 3.11.5
 * Docker
 * Poetry
 
