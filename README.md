@@ -25,6 +25,30 @@ Todos os comandos automatizados foram criados utilizando o [taskipy](https://git
 task <comando_especifico>
 ```
 
+### 📡 Ativar ambiente virtual
+* Poetry
+  
+```
+poetry shell
+```
+
+* Pip
+```
+Crie um ambiente virtual e ative
+```
+
+### 📦 Instalação de dependências
+* Poetry
+  
+```
+poetry install
+```
+
+* Pip
+```
+pip install -r requirements.txt
+```
+
 ### 🔧 Execução
 * Docker
   
@@ -32,16 +56,13 @@ task <comando_especifico>
 docker compose up
 ```
 
-* Poetry
+* Poetry e Pip
   
-```
-poetry shell #Ativa o ambiente virtual criado pelo Poetry
-```
-
 ```
 task run
 ```
-### 📄 Formatação automatizada
+  
+### 📄 Formatação
 ```
 task format
 ```
