@@ -2,9 +2,6 @@
 
 O TaskLoad é um sistema eficaz para o gerenciamento de tarefas que simplifica a organização do trabalho diário. O objetivo principal do sistema é facilitar a gestão de atividades, garantindo centralização e controle dessas ao usuário. 
 
-## 💈 Projeto em Produção
-[Acesse aqui](https://taskload.fly.dev/docs)
-
 ## 📑 Documento de Requisitos de Software
 [Acesse aqui](https://docs.google.com/document/d/16b-CBfULJDxG_XRGAQ6Nx4gNHEHyOLCYVKQ7KwPh5As/edit?usp=sharing)
 
